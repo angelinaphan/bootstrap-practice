@@ -6,3 +6,7 @@ body {
 .row {
   background-color: lightyellow;
 }
+
+.card {
+  margin: auto;
+}
