@@ -7,6 +7,13 @@ body {
   background-color: lightyellow;
 }
 
-.card2 {
-  margin:auto;
+.card {
+  margin: auto;
+}
+
+#welcome {
+    color: LightYellow;
+    text-shadow: 2px 2px 5px white;
+    font-family: cursive, serif;
+    font-style: italic;
 }
