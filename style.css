@@ -17,3 +17,9 @@ body {
     font-family: cursive, serif;
     font-style: italic;
 }
+
+.carousel {
+  width: 640px;
+  height: 360px;
+  margin: auto;
+}
