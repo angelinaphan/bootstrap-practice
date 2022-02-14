@@ -343,6 +343,22 @@
 <br>
 
 <div class="container mt-3">
+  <button type="button" class="btn btn-info" data-bs-toggle="tooltip" title="hello!">
+  hover over!
+</button>
+</div>
+
+<script>
+// Initialize tooltips
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+</script>
+
+<br>
+
+<div class="container mt-3">
   <ul class="pagination justify-content-center" style="margin:20px 0">
     <li class="page-item"><a class="page-link" href="index.html">1</a></li>
     <li class="page-item"><a class="page-link" href="second.html">2</a></li>
