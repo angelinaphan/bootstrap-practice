@@ -183,6 +183,47 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 
 <br>
 
+<div class="container mt-3">
+  <button type="button" class="btn btn-info" data-bs-toggle="popover" title="kiki & lala" data-bs-content="kiki is the younger brother and lala is the older sister">
+    toggle popover
+  </button>
+</div>
+
+<script>
+var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
+})
+</script>
+
+<br>
+
+<div class="container mt-3">
+  <button type="button" class="btn btn-light" id="toastbtn">toast</button>
+
+  <div class="toast">
+    <div class="toast-header">
+      <strong class="me-auto">twins stars bday!</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+    </div>
+    <div class="toast-body">
+      <p>the twins birthday is on dec the 24th!</p>
+    </div>
+  </div>
+</div>
+
+<script>
+document.getElementById("toastbtn").onclick = function() {
+  var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+  var toastList = toastElList.map(function(toastEl) {
+    return new bootstrap.Toast(toastEl)
+  })
+  toastList.forEach(toast => toast.show())
+}
+</script>
+
+<br>
+
       <div class="container mt-3">
         <ul class="pagination justify-content-center" style="margin:20px 0">
           <li class="page-item"><a class="page-link" href="index.html">1</a></li>
